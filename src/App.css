@@ -1,38 +1,185 @@
-.App {
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin-bottom: 70px; /* Adjust to fit the footer height */
+}
+
+
+
+
+/* Navbar */
+.navbar {
+  background-color: #001f3f; /* Navy color */
+  padding: 10px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 25px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #ffffff; /* White text for contrast */
+  font-weight: bold;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item a:hover {
+  color: #39CCCC; /* Teal color for hover effect */
+}
+
+
+
+/* Footer */
+.footer {
+  background-color: #001f3f; /* Navy color matching the navbar */
+  color: #ffffff;
+  padding: 40px 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  font-size: 0.9em;
+  height: 150px;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px; /* Reduced side padding */
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0; /* Reduced spacing between links */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px; /* Smaller font size for links */
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.newsletter {
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.newsletter input {
+  padding: 8px; /* Reduced input padding */
+  margin-right: 8px; /* Reduced margin between input and button */
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.newsletter button {
+  padding: 8px 16px; /* Reduced button padding */
+  background-color: #39CCCC; /* Teal color for buttons */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer .footer-right {
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+.newsletter button:hover {
+  background-color: #007b7b; /* Darker teal on hover */
+}
+
+.social-icons {
+  font-size: 16px; /* Slightly smaller icon size */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.social-icons > * {
+  margin-left: 8px; /* Reduced spacing between icons */
+  cursor: pointer;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.social-icons > *:hover {
+  color: #39CCCC; /* Teal color for icons hover */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer p {
+  margin-top: 10px; /* Reduced margin at the top of the paragraph */
+  font-size: 10px; /* Smaller font size for copyright text */
 }
 
-.App-link {
-  color: #61dafb;
+.footer .newsletter {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+/* Mobile Deals Styles */
+.mobile-deals {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-deals h1 {
+  color: #dc3545; /* Red for Mobile deals */
+}
+
+.mobile-deals p {
+  color: #555;
 }

@@ -1,0 +1,67 @@
+/* Home Page Styles */
+.home-container {
+  background: linear-gradient(135deg, #001f3f 30%, #39CCCC 100%); /* Navy to Teal gradient */
+  min-height: 70vh;
+  color: white;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 20%;
+  margin-bottom: 0px;
+}
+
+.content-wrapper {
+  max-width: 5000px;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly more transparent background */
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 0px;
+  
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px; /* Adds some space between paragraph and buttons */
+}
+
+.deal-button {
+  background-color: #39CCCC; /* Teal color for buttons */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.deal-button:hover {
+  background-color: #007b7b; /* Darker teal on hover */
+}
+
+.sim-deal {
+  background-color: #39CCCC;
+}
+
+.mobile-deal {
+  background-color: #001f3f;
+}
+
+.mobile-deal:hover {
+  background-color: #003366; /* Darker navy on hover */
+}
